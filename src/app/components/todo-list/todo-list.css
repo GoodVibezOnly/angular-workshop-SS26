@@ -1,10 +1,10 @@
 .todo {
   display: flex;
   align-items: center;
- gap: 16px;
- padding-inline: 8px;
- background-color: rgb(228, 228, 228);
- margin-block: 8px;
+  gap: 16px;
+  padding-inline: 8px;
+  background-color: rgb(228, 228, 228);
+  margin-block: 8px;
 
   button {
     width: 16px;

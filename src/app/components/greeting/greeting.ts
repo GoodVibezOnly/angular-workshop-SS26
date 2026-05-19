@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './greeting.css',
 })
 export class Greeting {
-  name = input("Student")
+  name = input('Student');
 }

@@ -2,21 +2,19 @@
   <h1 class="title">Angular Workshop</h1>
   <section class="sect">
     <h2>Concept 1 Inputs:</h2>
-  <div>
-    <label >Enter Name</label>
-    <input type="text" [(ngModel)]="nameInput" (input)="studentName.set(nameInput)" />
-  </div>
+    <div>
+      <label>Enter Name</label>
+      <input type="text" [(ngModel)]="nameInput" (input)="studentName.set(nameInput)" />
+    </div>
 
-  <app-greeting [name]="studentName()" >
-  </app-greeting>
+    <app-greeting [name]="studentName()"> </app-greeting>
   </section>
-    <section class="sect count">
+  <section class="sect count">
     <h2>Concept 2 Signals + Computed:</h2>
-      <app-counter></app-counter>
+    <app-counter></app-counter>
   </section>
-    <section class="sect todo">
+  <section class="sect todo">
     <h2>Concept 3 Todo List:</h2>
-      <app-todo-list></app-todo-list>
+    <app-todo-list></app-todo-list>
   </section>
-
 </main>

@@ -1,13 +1,13 @@
 <div>
-<p>{{completeTasks()}} of {{list().length}} tasks done - {{uncompleteTasks()}} remaining</p>
-<div>
-@for (todo of list(); track $index) {
-  <div class="todo">
-    <input type="checkbox" [checked]="todo.done" (click)="toggleTaskState(todo.id)" />
-    <p [class.done]="todo.done">{{todo.text}}</p>
-    <button (click)="deleteTask(todo.id)">x</button>
+  <p>{{ completeTasks() }} of {{ list().length }} tasks done - {{ uncompleteTasks() }} remaining</p>
+  <div>
+    @for (todo of list(); track todo.id) {
+      <div class="todo">
+        <input type="checkbox" [checked]="todo.done" (click)="toggleTaskState(todo.id)" />
+        <p [class.done]="todo.done">{{ todo.text }}</p>
+        <button (click)="deleteTask(todo.id)">x</button>
+      </div>
+    }
   </div>
-}
-</div>
-<input type="text" [(ngModel)]="inputText" /> <button (click)="addTask(inputText)">Add</button>
+  <input type="text" [(ngModel)]="inputText" /> <button (click)="addTask(inputText)">Add</button>
 </div>
