@@ -12,5 +12,5 @@ import { TodoList } from './components/todo-list/todo-list';
 })
 export class App {
   studentName = signal('Student');
-  nameInput = '';
+  nameInput = 'Student';
 }
