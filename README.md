@@ -108,18 +108,18 @@ Read a signal in a template by calling it like a function:
 ### Warmup
 
 - [ ] **1. Change the greeting message**
-  Open `src/app/greeting.html` and add a second line that shows a different message when `name` equals `'Student'` (the default). Use `@if`.
+  Open `src/app/components/greeting/greeting.html` and add a second line that shows a different message when `name` equals `'Student'` (the default). Use `@if`.
 
 - [ ] **2. Add a "step size" input to the counter**
-  Add a `step = signal(1)` to `counter.ts`. Modify `increment()` and `decrement()` to use `this.step()` instead of hardcoded `1`. Add a number input in `counter.html` so the user can change the step.
+  Add a `step = signal(1)` to `counter.ts`. Modify `increment()` and `substract()` to use `this.step()` instead of hardcoded `1`. Add a number input in `counter.html` so the user can change the step.
 
 ### Intermediate
 
 - [ ] **3. Show a "well done" banner when all todos are complete**
-  In `todo-list.html`, use `@if` and the existing `remainingCount` computed signal to show a congratulations message when the list is empty.
+  In `todo-list.html`, use `@if` and the existing `uncompleteTasks` computed signal to show a congratulations message when the count reaches zero.
 
 - [ ] **4. Create a new `<app-badge>` component**
-  Run `ng generate component badge`. Give it two `@Input()` properties: `label: string` and `color: string` (default `'#6c63ff'`). Use it inside `todo-list.html` to display the count of completed tasks.
+  Run `ng generate component badge`. Give it two `input()` properties: `label: string` and `color: string` (default `'#6c63ff'`). Use it inside `todo-list.html` to display the count of completed tasks.
 
 ### Advanced
 
