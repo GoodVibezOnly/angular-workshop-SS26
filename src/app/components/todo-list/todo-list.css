@@ -1,0 +1,21 @@
+.todo {
+  display: flex;
+  align-items: center;
+ gap: 16px;
+ padding-inline: 8px;
+ background-color: rgb(228, 228, 228);
+ margin-block: 8px;
+
+  button {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}

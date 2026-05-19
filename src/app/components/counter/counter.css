@@ -1,0 +1,25 @@
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.main {
+  font-size: 32px;
+  color: red;
+  margin: unset;
+}
+
+.sub {
+  color: black;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.error {
+  color: red;
+}

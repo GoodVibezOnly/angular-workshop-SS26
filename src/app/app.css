@@ -1,0 +1,17 @@
+.title {
+  color: red;
+}
+
+.sect {
+  background-color: #d2d2d2;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.count {
+  background-color: #b4e8b2;
+}
+
+.todo {
+  background-color: #7abce8;
+}

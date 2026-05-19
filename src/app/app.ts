@@ -1,12 +1,16 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Greeting } from "./components/greeting/greeting";
+import { FormsModule } from '@angular/forms';
+import { Counter } from "./components/counter/counter";
+import { TodoList } from "./components/todo-list/todo-list";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [Greeting, FormsModule, Counter, TodoList]
 })
 export class App {
-  protected readonly title = signal('angular-workshop');
+  studentName = signal("Student")
+ nameInput= ""
 }
